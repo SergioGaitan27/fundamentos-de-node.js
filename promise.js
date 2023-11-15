@@ -33,4 +33,8 @@ hola('Sergio')
     .then(adios)
     .then(() => {
         console.log('Terminando proceso...')
+    })
+    .catch((error) => {
+        console.error('Ha habido un error...');
+        console.error(error);
     });
